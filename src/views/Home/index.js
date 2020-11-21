@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Card, Button } from 'antd';
 import Axios from "axios";
 import { ACCESS_TOKEN } from '@/utils/config';
+import BackGroundImage from "@/components/BackGroundImage/index";
+import Particle from "@/components/Particle/index";
+import './style.less';
 
 
 class Home extends Component {
@@ -19,9 +22,13 @@ class Home extends Component {
     }
     render() { 
         return (  
-            <Card>
-                <Button onClick={this.handleRequestGithub}>请求</Button>
-            </Card>
+            <div className="home">
+                {/* 背景图片 */}
+                <BackGroundImage></BackGroundImage>
+                {/* 粒子特效 */}
+                <Particle></Particle>
+                {/* <Button onClick={this.handleRequestGithub}>请求</Button> */}
+            </div>
         );
     }
 }
