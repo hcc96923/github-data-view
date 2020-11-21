@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.less';
 
+
 function DataBox(props) {
     console.log(props);
     return (
@@ -26,9 +27,16 @@ function DataBox(props) {
                 <i className="b-r-line"></i>
             </div>
             {/* 仓库标题 */}
-            <div className="in-title">{props.title}</div>
-            {/* 未知 */}
+            {
+                props.title ?
+                <div className="in-title" >{props.title}</div>
+                :
+                <></>
+            }
+            
+            {/* 盒子内容 */}
             <div className="chart">
+                {props.children}
             </div>
         </div>
     )

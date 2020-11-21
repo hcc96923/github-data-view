@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    justify-content: space-around;
+    .card_item {
+        width: 150px;
+        height: 120px;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        .card_item_left {
+            font-size: 48px;
+            line-height: 120px;
+            color: yellow;
+        }
+        .card_item_right {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            text-align: center;
+            font-weight: bold;
+            .card_item_title {
+                font-size: 16px;
+            }
+            .card_item_count {
+                font-size: 48px;
+                color: yellow;
+            }
+        }
+    }
+}

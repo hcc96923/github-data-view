@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DataHeader from './DataHeader/index';
 import DataLeft from './DataLeft/index';
-import DataContent from './DataContent/index';
+import DataCenter from './DataCenter/index';
 import DataRight from './DataRight/index';
 import './style.less';
 
@@ -22,7 +22,7 @@ class Data extends Component {
                         </div>
                         {/* 中心 */}
                         <div className="main-center">
-                            <DataContent></DataContent>
+                            <DataCenter></DataCenter>
                         </div>
                         {/* 右侧 */}
                         <div className="main-right">

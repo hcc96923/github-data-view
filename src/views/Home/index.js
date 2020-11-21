@@ -15,8 +15,8 @@ class Home extends Component {
     handleRequestGithub = (value="hcc96923") => {
         this.setState({ loading: true });
 
-        // const params = { access_token: ACCESS_TOKEN };
-        Axios.get(`/api/users/${value}`)
+        const params = { access_token: ACCESS_TOKEN };
+        Axios.get(`/api/users/${value}`, { params })
             .then(response => {
                 const { status, data } = response;
                 if (status === 200) {
