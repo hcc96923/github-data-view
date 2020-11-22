@@ -19,7 +19,7 @@ function App() {
                         <Home></Home>
                     </Route>
                     {/* 数据路由 */}
-                    <Route path="/data">
+                    <Route path="/data/:username">
                         <Data></Data>
                     </Route>
                     {/* 404路由 */}

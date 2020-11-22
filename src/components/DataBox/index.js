@@ -3,7 +3,6 @@ import './style.less';
 
 
 function DataBox(props) {
-    console.log(props);
     return (
         <div className="data-box" style={{height: props.height}}>
             {/* 左上边框 */}

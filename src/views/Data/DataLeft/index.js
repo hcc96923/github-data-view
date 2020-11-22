@@ -5,18 +5,20 @@ import Classify from './Classify/index';
 import './style.less';
 
 
-
-function DataLeft() {
+function DataLeft(props) {
     return (
-        <div className="data-left">
+        <div className="data_left">
             {/* 个人信息 */}
             <DataBox height="360px">
-                <Person></Person>
+                <Person
+                    username={props.username}>
+                </Person>
             </DataBox>
-            
             {/* 仓库star */}
             <DataBox height="420px" title="仓库语言分类">
-                <Classify></Classify>
+                <Classify
+                    username={props.username}>
+                </Classify>
             </DataBox>
         </div>
     )
