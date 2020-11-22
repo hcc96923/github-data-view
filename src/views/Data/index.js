@@ -23,11 +23,15 @@ function Data(props) {
                 </div>
                 {/* 中心 */}
                 <div className="center">
-                    <DataCenter></DataCenter>
+                    <DataCenter
+                        username={params.username}>
+                    </DataCenter>
                 </div>
                 {/* 右侧 */}
                 <div className="right">
-                    <DataRight></DataRight>
+                    <DataRight
+                        username={params.username}>
+                    </DataRight>
                 </div>
             </div>
         </div>

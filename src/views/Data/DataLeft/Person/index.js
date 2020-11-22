@@ -7,7 +7,6 @@ import { formatTime } from '@/utils/format';
 import './style.less';
 
 
-
 function Person(props) {
     const { username } = props;
     const [loading, setLoading] = useState(false);
@@ -38,8 +37,8 @@ function Person(props) {
             spinning={loading}>
             <div className="person">
                 <div className="profile">
-                    <div>
-                        <Avatar src={data.avatar_url} size={100} icon={<UserOutlined />} />
+                    <div className="avatar">
+                        <Avatar src={data.avatar_url} size={80} icon={<UserOutlined />} />
                     </div>
                     <div className="join">
                         <h1>{data.login}</h1>

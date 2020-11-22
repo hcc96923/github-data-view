@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.less';
 
+
 function StarFollow() {
     return (
         <div className="star_follow">

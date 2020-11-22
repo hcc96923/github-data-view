@@ -5,7 +5,6 @@ import Chart from '@/components/Chart';
 import { ACCESS_TOKEN } from '@/utils/config';
 
 
-
 function Classify(props) {
 	const { username } = props;
 	const [loading, setLoading] = useState(false);
@@ -16,7 +15,7 @@ function Classify(props) {
 			trigger: 'item',
 			formatter: '{a} <br/>{b} : {c} ({d}%)'
 		},
-		color: ['#001369', '#1890FF', '#1b9436', '#751313', '#1DA57A'],
+		color: ['#1b9436', '#000B2D', '#13586C', '#1DA57A', '#0122269'],
 		legend: {
 			orient: 'vertical',
 			x: 15,

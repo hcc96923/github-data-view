@@ -5,17 +5,24 @@ import Star from './Star/index';
 import Size from './Size/index';
 
 
-function DataCenter() {
+function DataCenter(props) {
+    const { username } = props;
     return (
         <div className="data_center">
             <div className="top_card">
-                <Card></Card>
+                <Card
+                    username={username}>
+                </Card>
             </div>
             <div className="star">
-                <Star></Star>
+                <Star
+                    username={username}>
+                </Star>
             </div>
             <div className="size">
-                <Size></Size>
+                <Size
+                    username={username}>
+                </Size>
             </div>
         </div>
     )
