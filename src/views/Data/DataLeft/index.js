@@ -15,7 +15,7 @@ function DataLeft() {
             </DataBox>
             
             {/* 仓库star */}
-            <DataBox height="360px" title="仓库语言分类">
+            <DataBox height="420px" title="仓库语言分类">
                 <Classify></Classify>
             </DataBox>
         </div>
