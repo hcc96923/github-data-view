@@ -5,7 +5,6 @@
 export const debounce = (fn, delay) => {
     return function (args) {
         clearTimeout(fn.id);
-
         fn.id = setTimeout(() => {
             fn.call(this, args);
         }, delay);

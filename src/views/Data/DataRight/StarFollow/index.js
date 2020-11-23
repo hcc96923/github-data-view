@@ -4,10 +4,9 @@ import './style.less';
 
 function StarFollow() {
     return (
-        <div className="star_follow">
+        <div className="star-follow">
             star_follow
         </div>
     )
-}
-
+};
 export default StarFollow;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Input, message } from 'antd';
 import Axios from "axios";
@@ -10,7 +10,6 @@ import './style.less';
 
 function Home(props){
     const [loading, setLoading] = useState(false);
-
     const handleRequestGithub = (value) => {
         setLoading(true);
         const params = { access_token: ACCESS_TOKEN };
@@ -28,12 +27,7 @@ function Home(props){
             .catch(error => {
                 console.log(error);
             });
-    }
-    useEffect(() => {
-        return () => {
-
-        }
-    }, [setLoading]);
+    };
     return (
         <div className="home">
             {/* 背景图片 */}
@@ -45,7 +39,7 @@ function Home(props){
                 <h1>GitHub-Data-View</h1>
             </div>
             {/* 搜索 */}
-            <div className="search_form">
+            <div className="search-form">
                 <Input.Search 
                     size="large"
                     enterButton
@@ -57,6 +51,5 @@ function Home(props){
             </div>
         </div>
     )
-}
-
+};
 export default withRouter(Home);

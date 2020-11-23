@@ -8,6 +8,5 @@ function RecentOperation() {
             recent_operation
         </div>
     )
-}
-
+};
 export default RecentOperation;

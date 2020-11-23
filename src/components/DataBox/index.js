@@ -39,6 +39,5 @@ function DataBox(props) {
             </div>
         </div>
     )
-}
-
+};
 export default DataBox;

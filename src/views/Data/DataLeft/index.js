@@ -8,21 +8,20 @@ import './style.less';
 function DataLeft(props) {
     const { username } = props;
     return (
-        <div className="data_left">
+        <div className="data-left">
             {/* 个人信息 */}
-            <DataBox height="360px">
+            <DataBox height="400px">
                 <Person
                     username={username}>
                 </Person>
             </DataBox>
             {/* 仓库star */}
-            <DataBox height="420px" title="仓库语言分类">
+            <DataBox height="400px" title="仓库语言分类">
                 <Classify
                     username={username}>
                 </Classify>
             </DataBox>
         </div>
     )
-}
-
+};
 export default DataLeft;

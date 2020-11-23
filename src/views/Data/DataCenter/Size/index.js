@@ -119,25 +119,25 @@ function Size(props) {
             }
         ]
     };
-	const handleRequestSize = (username) => {
-		setLoading(true);
-        const params = { access_token: ACCESS_TOKEN };
-		Axios.get(`/api/users/${username}/repos`, { params })
-			.then(async response => {
-				const { status, data } = response;
-				if (status === 200) {
-					const resolveName = data.map(item => item.name);
-                    setNameData(resolveName);
-                    const resolveSize = data.map(item => (item.size/1024).toFixed(2));
-                    setSizeData(resolveSize);
-				}
-                setLoading(false);
-			})
-			.catch(error => {
-				console.log(error);
-			});
-	}
 	useEffect(() => {
+        const handleRequestSize = (username) => {
+            setLoading(true);
+            const params = { access_token: ACCESS_TOKEN };
+            Axios.get(`/api/users/${username}/repos`, { params })
+                .then(async response => {
+                    const { status, data } = response;
+                    if (status === 200) {
+                        const resolveName = data.map(item => item.name);
+                        setNameData(resolveName);
+                        const resolveSize = data.map(item => (item.size/1024).toFixed(2));
+                        setSizeData(resolveSize);
+                    }
+                    setLoading(false);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        };
 		handleRequestSize(username);
 	}, [username]);
     return (
@@ -145,7 +145,7 @@ function Size(props) {
             size="large"
             tip="Loading..."
             spinning={loading}>
-            <Chart chartId={"size"} chartHeight="360px" chartOptions={chartOptions}></Chart>
+            <Chart chartId={"size"} chartHeight="400px" chartOptions={chartOptions}></Chart>
         </Spin>
     );
 };

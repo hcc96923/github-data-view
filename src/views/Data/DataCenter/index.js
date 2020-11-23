@@ -1,5 +1,4 @@
 import React from 'react';
-import { BarChartOutlined } from '@ant-design/icons';
 import Card from './Card/index';
 import Star from './Star/index';
 import Size from './Size/index';
@@ -8,8 +7,8 @@ import Size from './Size/index';
 function DataCenter(props) {
     const { username } = props;
     return (
-        <div className="data_center">
-            <div className="top_card">
+        <div className="data-center">
+            <div className="top-card">
                 <Card
                     username={username}>
                 </Card>
@@ -26,6 +25,5 @@ function DataCenter(props) {
             </div>
         </div>
     )
-}
-
+};
 export default DataCenter;

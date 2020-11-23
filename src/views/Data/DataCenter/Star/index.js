@@ -42,25 +42,25 @@ function Star(props) {
 			}
 		]
 	};
-	const handleRequestStar = (username) => {
-		setLoading(true);
-        const params = { access_token: ACCESS_TOKEN };
-		Axios.get(`/api/users/${username}/repos`, { params })
-			.then(response => {
-				const { status, data } = response;
-				if (status === 200) {
-					const resolveData = data.map(item => {
-						return { name: item.name, value: item.watchers_count };
-					});
-					setStarData(resolveData);
-				}
-                setLoading(false);
-			})
-			.catch(error => {
-				console.log(error);
-			});
-	}
 	useEffect(() => {
+		const handleRequestStar = (username) => {
+			setLoading(true);
+			const params = { access_token: ACCESS_TOKEN };
+			Axios.get(`/api/users/${username}/repos`, { params })
+				.then(response => {
+					const { status, data } = response;
+					if (status === 200) {
+						const resolveData = data.map(item => {
+							return { name: item.name, value: item.watchers_count };
+						});
+						setStarData(resolveData);
+					}
+					setLoading(false);
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		};
 		handleRequestStar(username);
 	}, [username]);
     return (

@@ -11,6 +11,5 @@ function BackGroundImage() {
             <li></li>
         </ul>
     )
-}
-
+};
 export default BackGroundImage;

@@ -59,6 +59,5 @@ function Particle(){
             params={params}>
         </Particles>
     )
-}
-
+};
 export default Particle;

@@ -11,25 +11,24 @@ function Person(props) {
     const { username } = props;
     const [loading, setLoading] = useState(false);
     const [data, setData] = useState({});
-
-    const handleRequestPerson = (username) => {
-        setLoading(true);
-        const params = { access_token: ACCESS_TOKEN };
-        Axios.get(`/api/users/${username}`, { params })
-            .then(response => {
-                const { status, data } = response;
-                if (status === 200) {
-                    setData(data);
-                } 
-                setLoading(false);
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    }
     useEffect(() => {
+        const handleRequestPerson = (username) => {
+            setLoading(true);
+            const params = { access_token: ACCESS_TOKEN };
+            Axios.get(`/api/users/${username}`, { params })
+                .then(response => {
+                    const { status, data } = response;
+                    if (status === 200) {
+                        setData(data);
+                    } 
+                    setLoading(false);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        };
         handleRequestPerson(username);
-    }, [username]); // 只有当useEffect依赖的值改变了才会重新触发函数
+    }, [username]);
     return (
         <Spin
             size="large"
@@ -56,6 +55,5 @@ function Person(props) {
             </div>
         </Spin>
     )
-}
-
+};
 export default Person;

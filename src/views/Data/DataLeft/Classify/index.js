@@ -61,22 +61,22 @@ function Classify(props) {
 		}
 		setLanguageTypeValue(languageTypeCount);
 	};
-	const handleRequestLanguage = (username) => {
-		setLoading(true);
-        const params = { access_token: ACCESS_TOKEN };
-		Axios.get(`/api/users/${username}/repos`, { params })
-			.then(async response => {
-				const { status, data } = response;
-                if (status === 200) {
-					await handleResolveLanguage(data);
-				} 
-                setLoading(false);
-			})
-			.catch(error => {
-				console.log(error);
-			});
-	}
 	useEffect(() => {
+		const handleRequestLanguage = (username) => {
+			setLoading(true);
+			const params = { access_token: ACCESS_TOKEN };
+			Axios.get(`/api/users/${username}/repos`, { params })
+				.then(response => {
+					const { status, data } = response;
+					if (status === 200) {
+						handleResolveLanguage(data);
+					} 
+					setLoading(false);
+				})
+				.catch(error => {
+					console.log(error);
+				});
+		};
 		handleRequestLanguage(username);
 	}, [username]);
     return (
@@ -90,7 +90,6 @@ function Classify(props) {
 				chartOptions={chartOptions}>
 			</Chart>
 		</Spin>
-        
     );
 };
 export default Classify;

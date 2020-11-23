@@ -7,17 +7,16 @@ import './style.less';
 
 function DataRight() {
     return (
-        <div className="data_right">
+        <div className="data-right">
             {/* star与follow */}
-            <DataBox height="420px">
+            <DataBox height="400px">
                 <StarFollow></StarFollow>
             </DataBox>
             {/* 最近的操作 */}
-            <DataBox height="360px">
+            <DataBox height="400px">
                 <RecentOperation></RecentOperation>
             </DataBox>
         </div>
     )
-}
-
+};
 export default DataRight;

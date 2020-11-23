@@ -38,6 +38,5 @@ function Data(props) {
             </div>
         </div>
     )
-}
-
+};
 export default withRouter(Data);
