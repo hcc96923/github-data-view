@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withRouter } from 'react-router-dom';
 import DataHeader from './DataHeader/index';
 import DataLeft from './DataLeft/index';
@@ -12,7 +12,9 @@ function Data(props) {
     return (
         <div className="data">
             {/* 头部 */}
-            <DataHeader></DataHeader>
+            <div className="header">
+                <DataHeader></DataHeader>
+            </div>
             {/* 内容 */}
             <div className="content">
                 {/* 左侧 */}

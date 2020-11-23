@@ -48,7 +48,7 @@ function Person(props) {
                 </div>
                 <div className="basic">
                     <p className="bio">{data.bio ? data.bio : "bio"}</p>
-                    <p className="company">{data.company ? data.company : "ByteDance"}</p>
+                    <p className="company">{data.company ? data.company : "PornHub"}</p>
                     <p className="blog">{data.blog ? data.blog : data.html_url}</p>
                     <p className="email">{data.email ? data.email : "email"}</p>
                     <p className="address">{data.location ? data.location : "location"}</p>

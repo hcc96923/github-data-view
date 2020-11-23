@@ -3,10 +3,8 @@ import './style.less';
 
 function DataHeader() {
     return (
-        <div className="data_header">
-            <div className="header_bg">
-                <div className="header_title">GitHub-Data-View数据平台</div>
-            </div>
+        <div className="header-background ">
+            <div className="header-title">GitHub-Data-View数据平台</div>
         </div>
     )
 }
