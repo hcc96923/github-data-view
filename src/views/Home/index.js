@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { withRouter } from 'react-router-dom';
 import { Input, message } from 'antd';
 import Axios from "axios";
@@ -6,10 +6,12 @@ import { ACCESS_TOKEN } from '@/utils/config';
 import BackGroundImage from "@/components/BackGroundImage/index";
 import Particle from "@/components/Particle/index";
 import './style.less';
+import { useEffect } from 'react';
 
 
 function Home(props){
     const [loading, setLoading] = useState(false);
+    const ref = useRef(false); 
     const handleRequestGithub = (value) => {
         setLoading(true);
         const params = { access_token: ACCESS_TOKEN };
@@ -22,12 +24,18 @@ function Home(props){
                 } else {
                     message.error('Error');
                 }
-                setLoading(false);
+                if (ref.current) {
+                    setLoading(false);
+                }
             })
             .catch(error => {
                 console.log(error);
             });
     };
+    useEffect(() => {
+        ref.current = true;
+        return () => { ref.current = false };
+    });
     return (
         <div className="home">
             {/* 背景图片 */}
