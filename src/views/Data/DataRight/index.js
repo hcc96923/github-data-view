@@ -5,16 +5,17 @@ import RecentOperation from './RecentOperation/index';
 import './style.less';
 
 
-function DataRight() {
+function DataRight(props) {
+    const { username } = props;
     return (
         <div className="data-right">
             {/* star与follow */}
             <DataBox height="400px">
-                <StarFollow></StarFollow>
+                <StarFollow username={username}></StarFollow>
             </DataBox>
             {/* 最近的操作 */}
             <DataBox height="400px">
-                <RecentOperation></RecentOperation>
+                <RecentOperation username={username}></RecentOperation>
             </DataBox>
         </div>
     )

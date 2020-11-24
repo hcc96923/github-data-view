@@ -16,7 +16,7 @@ function DataLeft(props) {
                 </Person>
             </DataBox>
             {/* 仓库star */}
-            <DataBox height="400px" title="仓库语言分类">
+            <DataBox height="400px" fontSize="30px" title="仓库语言分类">
                 <Classify
                     username={username}>
                 </Classify>

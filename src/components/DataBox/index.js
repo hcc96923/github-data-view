@@ -28,7 +28,7 @@ function DataBox(props) {
             {/* 仓库标题 */}
             {
                 props.title ?
-                <div className="in-title" >{props.title}</div>
+                <div className="in-title" style={{fontSize: props.fontSize ? props.fontSize : ''}} >{props.title}</div>
                 :
                 <></>
             }
