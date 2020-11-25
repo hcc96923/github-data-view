@@ -19,7 +19,7 @@ function Size(props) {
                 fontSize: 30,
                 color: '#1DA57A'
             },
-            left: '100'
+            left: 'center'
         },
         tooltip: {
             trigger: 'axis'
@@ -94,7 +94,7 @@ function Size(props) {
                 data: sizeData,
                 itemStyle: {
 					normal: {
-						color: '#4788FB',
+						color: '#1DA57',
 						label: {
 							show: true,
 							position: 'top',
@@ -137,7 +137,7 @@ function Size(props) {
             size="large"
             tip="Loading..."
             spinning={loading}>
-            <Chart chartId={"size"} chartHeight="400px" chartOptions={chartOptions}></Chart>
+            <Chart chartId={"size"} chartHeight="440px" chartOptions={chartOptions}></Chart>
         </Spin>
     );
 };

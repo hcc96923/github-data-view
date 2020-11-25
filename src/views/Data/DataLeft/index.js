@@ -10,13 +10,13 @@ function DataLeft(props) {
     return (
         <div className="data-left">
             {/* 个人信息 */}
-            <DataBox height="400px">
+            <DataBox height="480px">
                 <Person
                     username={username}>
                 </Person>
             </DataBox>
             {/* 仓库star */}
-            <DataBox height="400px" fontSize="30px" title="仓库语言分类">
+            <DataBox height="480px" fontSize="30px" title="仓库语言分类">
                 <Classify
                     username={username}>
                 </Classify>

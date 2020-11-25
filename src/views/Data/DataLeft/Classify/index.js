@@ -20,7 +20,8 @@ function Classify(props) {
 			orient: 'vertical',
 			x: 15,
 			data: languageType,
-			top: 20,
+			top: 24,
+			bottom: 24,
 			textStyle: {
 				color: '#fff'
 			}
@@ -86,7 +87,7 @@ function Classify(props) {
 			spinning={loading}>
 			<Chart
 				chartId={"classify"}
-				chartHeight="280px"
+				chartHeight="420px"
 				chartOptions={chartOptions}>
 			</Chart>
 		</Spin>

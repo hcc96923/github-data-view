@@ -37,7 +37,7 @@ function Person(props) {
             <div className="person">
                 <div className="profile">
                     <div className="avatar">
-                        <Avatar src={data.avatar_url} size={80} icon={<UserOutlined />} />
+                        <Avatar src={data.avatar_url} size={120} icon={<UserOutlined />} />
                     </div>
                     <div className="join">
                         <h1>{data.login}</h1>

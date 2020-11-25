@@ -11,14 +11,14 @@ function Star(props) {
 	const [starData, setStarData] = useState([]);
 	const chartOptions = {
 		title: {
-			top: 30,
+			top: 20,
 			text: '仓库star统计',
 			textStyle: {
 				fontWeight: 'bold',
 				fontSize: 30,
 				color: '#1DA57A'
 			},
-			left: '100'
+			left: 'center'
 		},
 		tooltip: {
 			trigger: 'item',
@@ -68,7 +68,7 @@ function Star(props) {
 			size="large"
 			tip="Loading..."
 			spinning={loading}>
-			<Chart chartId={"star"} chartHeight="320px" chartOptions={chartOptions}/>
+			<Chart chartId={"star"} chartHeight="400px" chartOptions={chartOptions}/>
 		</Spin>
     );
 };

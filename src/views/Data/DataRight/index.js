@@ -10,11 +10,11 @@ function DataRight(props) {
     return (
         <div className="data-right">
             {/* star */}
-            <DataBox height="400px" fontSize="18px" title="新增粉丝">
+            <DataBox height="480px" fontSize="18px" title="新增粉丝">
                 <Star username={username}></Star>
             </DataBox>
             {/* follow  */}
-            <DataBox height="400px" fontSize="18px" title="最近跟随">
+            <DataBox height="480px" fontSize="18px" title="最近跟随">
                 <Follow username={username}></Follow>
             </DataBox>
         </div>
