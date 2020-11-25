@@ -12,15 +12,14 @@ function Size(props) {
     const [sizeData, setSizeData] = useState([]);
 	const chartOptions = {
         title: {
-            top: 20,
-            bottom: 20,
+            top: 30,
             text: '仓库size统计',
             textStyle: {
                 fontWeight: 'bold',
                 fontSize: 30,
-                color: '#1b9436'
+                color: '#1DA57A'
             },
-            left: 'center'
+            left: '100'
         },
         tooltip: {
             trigger: 'axis'
@@ -36,7 +35,7 @@ function Size(props) {
                     }
                 },
                 axisLabel: {
-                    color: '#4788FB',
+                    color: '#1DA57A',
                     textStyle: {
                         fontSize: 14
                     }
@@ -47,16 +46,9 @@ function Size(props) {
         yAxis: [
             {
                 type: 'value',
-                name: '空间大小',
-                nameTextStyle: {
-                    color: '#1DA57A',
-                    fontSize: 16,
-                    fontStyle: 'normal',
-                    fontWeight: 'bold',
-                },
                 axisLine: {
                     lineStyle: {
-                        color: '#009688',
+                        color: '#1DA57A',
                         width: 1
                     }
                 },

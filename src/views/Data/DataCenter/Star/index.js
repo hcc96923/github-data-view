@@ -18,7 +18,7 @@ function Star(props) {
 				fontSize: 30,
 				color: '#1DA57A'
 			},
-			left: 'center'
+			left: '100'
 		},
 		tooltip: {
 			trigger: 'item',
