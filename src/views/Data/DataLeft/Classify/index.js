@@ -15,7 +15,7 @@ function Classify(props) {
 			trigger: 'item',
 			formatter: '{a} <br/>{b} : {c} ({d}%)'
 		},
-		color: ['#1b9436', '#000B2D', '#13586C', '#1DA57A', '#0122269'],
+		color: ['#1b9436', '#000B2D', '#2d5ff6', '#1DA57A', '#0122269'],
 		legend: {
 			orient: 'vertical',
 			x: 15,
