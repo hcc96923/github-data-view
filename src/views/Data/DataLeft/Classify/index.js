@@ -15,7 +15,7 @@ function Classify(props) {
 			trigger: 'item',
 			formatter: '{a} <br/>{b} : {c} ({d}%)'
 		},
-		color: ['#1b9436', '#000B2D', '#2d5ff6', '#1DA57A', '#0122269'],
+		color: ['#469F4B', '#1DA57A', ' #096DD9', '#FFC530', '#15698A'],
 		legend: {
 			orient: 'vertical',
 			x: 15,
@@ -31,7 +31,7 @@ function Classify(props) {
 				name: '语言分类',
 				type: 'pie',
 				radius: '50%',
-				center: ['50%', '60%'],
+				center: ['50%', '75%'],
 				data: languageTypeValue,
 				emphasis: {
 					itemStyle: {

@@ -13,7 +13,7 @@ function StarFollow(props) {
         const following = data.map(user => {
             return { id: user.id, avatar: user.avatar_url, username: user.login };
         });
-        const followingData = following.splice(0, 20);
+        const followingData = following.splice(0, 16);
         setFollowingData(followingData);
     };
     useEffect(() => {

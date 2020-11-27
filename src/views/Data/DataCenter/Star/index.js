@@ -24,7 +24,7 @@ function Star(props) {
 			trigger: 'item',
 			formatter: '{a} <br/>{b} : {c} ({d}%)'
 		},
-		color: ['#1b9436', '#000B2D', '#13586C', '#1DA57A', '#0122269'],
+		color: ['#469F4B', '#1DA57A', ' #096DD9', '#FFC530', '#15698A'],
 		series: [
 			{
 				name: '仓库star统计',

@@ -37,7 +37,7 @@ function Person(props) {
             <div className="person">
                 <div className="profile">
                     <div className="avatar">
-                        <Avatar src={data.avatar_url} size={120} icon={<UserOutlined />} />
+                        <Avatar src={data.avatar_url} size={80} icon={<UserOutlined />} />
                     </div>
                     <div className="join">
                         <h1>{data.login}</h1>
@@ -47,7 +47,7 @@ function Person(props) {
                 </div>
                 <div className="basic">
                     <p className="bio">{data.bio ? data.bio : "bio"}</p>
-                    <p className="company">{data.company ? data.company : "PornHub"}</p>
+                    <p className="company">{data.company ? data.company : "Google"}</p>
                     <p className="blog">{data.blog ? data.blog : data.html_url}</p>
                     <p className="email">{data.email ? data.email : "email"}</p>
                     <p className="address">{data.location ? data.location : "location"}</p>

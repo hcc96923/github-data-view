@@ -9,6 +9,7 @@ function DataLeft(props) {
     const { username } = props;
     return (
         <div className="data-left">
+            
             {/* 个人信息 */}
             <DataBox height="480px">
                 <Person

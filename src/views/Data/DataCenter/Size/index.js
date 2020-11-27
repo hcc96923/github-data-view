@@ -48,7 +48,7 @@ function Size(props) {
                 type: 'value',
                 axisLine: {
                     lineStyle: {
-                        color: '#1DA57A',
+                        color: '#092998',
                         width: 1
                     }
                 },
@@ -94,7 +94,7 @@ function Size(props) {
                 data: sizeData,
                 itemStyle: {
 					normal: {
-						color: '#1DA57',
+						color: '#092998',
 						label: {
 							show: true,
 							position: 'top',

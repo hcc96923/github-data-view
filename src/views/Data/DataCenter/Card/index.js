@@ -54,7 +54,7 @@ function Card(props) {
                     </section>
                     <section className="item-right">
                         <span className="item-title">私有仓库</span>
-                        <span className="item-count">{personData.owned_private_repos}</span>
+                        <span className="item-count">{personData.owned_private_repos ? personData.owned_private_repos : 0}</span>
                     </section>
                 </div>
                 <div className="card-item">

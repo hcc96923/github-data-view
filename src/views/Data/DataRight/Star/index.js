@@ -13,7 +13,7 @@ function Star(props) {
         const followers = data.map(user => {
             return { id: user.id, avatar: user.avatar_url, username: user.login };
         });
-        const followersData = followers.splice(0, 20);
+        const followersData = followers.splice(0, 16);
         setFollowersData(followersData);
     };
     useEffect(() => {
