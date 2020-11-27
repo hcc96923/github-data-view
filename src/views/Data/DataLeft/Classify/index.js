@@ -87,7 +87,7 @@ function Classify(props) {
 			spinning={loading}>
 			<Chart
 				chartId={"classify"}
-				chartHeight="420px"
+				chartHeight="430px"
 				chartOptions={chartOptions}>
 			</Chart>
 		</Spin>

@@ -35,7 +35,7 @@ function Card(props) {
     }, [username]);
     return (
         <Spin
-            size="small"
+            size="large"
             tip="Loading..."
             spinning={loading}>
             <div className="card">
