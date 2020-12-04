@@ -52,7 +52,7 @@ function Home(props){
                     size="large"
                     enterButton
                     loading={loading} 
-                    defaultValue="hcc96923"
+                    defaultValue="yyx990803"
                     placeholder="输入用户名生成你的GitHub数据"
                     onSearch={handleRequestGithub}>
                 </Input.Search>
