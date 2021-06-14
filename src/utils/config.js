@@ -1,2 +1,2 @@
 // 认证token
-export const ACCESS_TOKEN = 'de849bd7cbb7b52bd5989349624255c7a23ec2fc';
+export const ACCESS_TOKEN = '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';
